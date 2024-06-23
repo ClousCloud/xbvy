@@ -1,0 +1,26 @@
+{
+    "name": "xpocketmc/xbvy",
+    "type": "library",
+    "require": {
+        "xpocketmc/math": "^1.0",
+        "xpocketmc/color": "0.0.1+xpocketmp",
+        "pocketmine/errorhandler": "^0.7.0",
+        "phpstan/phpstan": "1.11.0",
+        "pocketmine/bedrock-protocol": "31.0.0+bedrock-1.21.0"
+    },
+    "require-dev": {
+        "php": "^8.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "xpocketmc\\xbvy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DashDactyl",
+            "email": "nubledstudioetc@gmail.com"
+        }
+    ]
+}

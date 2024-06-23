@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.0'
+
+    - name: Install dependencies
+      run: composer install
+
+    - name: Run tests
+      run: vendor/bin/phpunit
+
+    - name: Code linting
+      run: vendor/bin/phpcs --standard=PSR12 .
+
+    - name: Code analysis
+      run: vendor/bin/phpstan analyze
+
+    - name: Code coverage
+      run: vendor/bin/phpunit --coverage-clover=coverage.xml
+
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage
+        path: coverage.xml
