@@ -8,9 +8,6 @@
         "phpstan/phpstan": "1.11.0",
         "pocketmine/bedrock-protocol": "31.0.0+bedrock-1.21.0"
     },
-    "require-dev": {
-        "php": "^8.3"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
