@@ -2,6 +2,8 @@
 
 namespace xpocketmc\xbvy;
 
+use xpocketmp\xbvy\VBT;
+
 class XPocketMPHandler {
     private string $serverName;
     private array $playersOnline;
