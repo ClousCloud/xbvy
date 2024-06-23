@@ -7,7 +7,7 @@
         "pocketmine/errorhandler": "^0.7.0",
         "phpstan/phpstan": "1.11.0",
         "pocketmine/bedrock-protocol": "31.0.0+bedrock-1.21.0",
-        "php": "8.1"
+        "php": "^8.1"
     },
     "license": "MIT",
     "autoload": {
